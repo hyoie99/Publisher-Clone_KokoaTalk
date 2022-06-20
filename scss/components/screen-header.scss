@@ -1,0 +1,38 @@
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  margin: 15px 0;
+  .screen-header__title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .screen-header__icons {
+    position: relative;
+    span {
+      margin-left: 20px;
+    }
+    .screen-header__icons--noti-sm {
+      width: 4px;
+      height: 4px;
+      position: absolute;
+      right: 0px;
+      bottom: 20px;
+    }
+    .fa-gear {
+      &:hover {
+        animation: rotateCog 1.5s ease-in-out infinite;
+      }
+    }
+  }
+}

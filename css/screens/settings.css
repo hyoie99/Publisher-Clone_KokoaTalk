@@ -1,0 +1,29 @@
+.settings-list {
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.3);
+}
+.settings-list .settings__setting {
+  padding: 20px 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settings-list .settings__setting:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.settings-list .settings__setting i {
+  font-size: 22px;
+  margin-right: 15px;
+  opacity: 0.9;
+}
+.settings-list .settings__setting .settings__setting-column:first-child {
+  display: flex;
+}
+.settings-list .settings__setting .settings__setting-column:first-child .nav__noti {
+  margin-left: 10px;
+}
+.settings-list .settings__setting .settings__setting-column:last-child {
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=settings.css.map */

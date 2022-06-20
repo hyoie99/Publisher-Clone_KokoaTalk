@@ -1,0 +1,36 @@
+.alt-header {
+  padding: var(--horizontal-space);
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.alt-header .alt-header__column {
+  width: 33%;
+}
+.alt-header .alt-header__column:nth-child(1) {
+  margin-right: auto;
+}
+.alt-header .alt-header__column:nth-child(2) {
+  text-align: center;
+}
+.alt-header .alt-header__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.alt-header .alt-header__column .icon-bigger {
+  font-size: 25px;
+}
+.alt-header .alt-header__column .icon-smaller {
+  font-size: 22px;
+}
+.alt-header .alt-header__column .alt-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+.alt-header .alt-header__column span:last-child {
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=alt-screen-header.css.map */

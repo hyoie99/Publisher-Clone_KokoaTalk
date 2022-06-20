@@ -1,0 +1,37 @@
+.alt-header {
+  padding: var(--horizontal-space);
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .alt-header__column {
+    width: 33%;
+    &:nth-child(1) {
+      margin-right: auto;
+      //   justify-content: center;
+    }
+    &:nth-child(2) {
+      text-align: center;
+    }
+    &:last-child {
+      margin-left: auto;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .icon-bigger {
+      font-size: 25px;
+    }
+    .icon-smaller {
+      font-size: 22px;
+    }
+    .alt-header__title {
+      font-size: 32px;
+      font-weight: 600;
+    }
+    span {
+      &:last-child {
+        margin-left: 20px;
+      }
+    }
+  }
+}

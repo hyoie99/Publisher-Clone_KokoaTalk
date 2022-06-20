@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - KoKoa Clone</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <!-- Wifi Icon -->
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>12:12</span>
+      </div>
+      <div class="status-bar__column">
+        <span>98%</span>
+        <!-- battery icon  -->
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <!-- lighting icon  -->
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back();">
+          <i class="fa-solid fa-angle-left icon-bigger"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+      <div class="alt-header__column">
+        <i class="fa-solid fa-magnifying-glass icon-smaller"></i>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>Notices</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-flask"></i>
+            <span>KoKoa Lab</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Version</span>
+          </div>
+          <div class="settings__setting-column">
+            <span>Last Version</span>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="settings-list settings-list2">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-lock"></i>
+            <span>Privacy</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-bell"></i>
+            <span>Notifications</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-user"></i>
+            <span>Friends</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-comment"></i>
+            <span>Chats</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            <span>Display</span>
+            <span class="nav__noti badge">N</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-brush"></i>
+            <span>Themes</span>
+            <span class="nav__noti badge">N</span>
+          </div>
+          <div class="settings__setting-column">
+            <span>Default theme</span>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-regular fa-user fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__noti nav__noti-ani badge">1</span>
+            <i class="fa-regular fa-comment fa-lg"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fa-solid fa-magnifying-glass fa-lg"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__noti nav__noti-small badge"></span>
+            <i class="fa-regular fa-ellipsis fa-lg"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <span>Your screen is too big:(</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/ea015f8868.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
