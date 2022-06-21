@@ -34,6 +34,7 @@
   height: 200vh;
   .status-bar {
     background-color: #abc1d1;
+    z-index: 2;
   }
   .alt-header {
     background-color: #abc1d1;
@@ -41,6 +42,7 @@
     position: fixed;
     top: 5px;
     width: 100%;
+    z-index: 1;
   }
   .main-chat {
     display: flex;
@@ -146,16 +148,13 @@
     align-items: center;
     padding: 5px 20px;
     transition: all 0.3s ease-in-out;
-    &:focus-within {
-      transform: translateY(80px);
-    }
     &:focus-within .reply__column:first-child,
     &:focus-within .reply__column-icons {
       opacity: 0;
     }
     &:focus-within input {
       // width: 95%;
-      transform: scaleX(1.25) translateX(3.5%) translateY(-80px);
+      transform: scaleX(1.25) translateX(3.5%);
     }
     i {
       opacity: 0.8;

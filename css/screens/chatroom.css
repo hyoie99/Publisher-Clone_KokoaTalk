@@ -32,6 +32,7 @@
 }
 #chat-screen .status-bar {
   background-color: #abc1d1;
+  z-index: 2;
 }
 #chat-screen .alt-header {
   background-color: #abc1d1;
@@ -39,6 +40,7 @@
   position: fixed;
   top: 5px;
   width: 100%;
+  z-index: 1;
 }
 #chat-screen .main-chat {
   display: flex;
@@ -139,14 +141,11 @@
   padding: 5px 20px;
   transition: all 0.3s ease-in-out;
 }
-#chat-screen .reply:focus-within {
-  transform: translateY(80px);
-}
 #chat-screen .reply:focus-within .reply__column:first-child, #chat-screen .reply:focus-within .reply__column-icons {
   opacity: 0;
 }
 #chat-screen .reply:focus-within input {
-  transform: scaleX(1.25) translateX(3.5%) translateY(-80px);
+  transform: scaleX(1.25) translateX(3.5%);
 }
 #chat-screen .reply i {
   opacity: 0.8;
